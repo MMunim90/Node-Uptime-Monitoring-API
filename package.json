@@ -1,5 +1,27 @@
 {
   "dependencies": {
-    "lodash": "^4.18.1"
-  }
+    "lodash": "^4.18.1",
+    "nodemon": "^3.1.14"
+  },
+  "name": "raw-node-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "dev": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MMunim90/Raw-Node-Project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/MMunim90/Raw-Node-Project/issues"
+  },
+  "homepage": "https://github.com/MMunim90/Raw-Node-Project#readme"
 }
