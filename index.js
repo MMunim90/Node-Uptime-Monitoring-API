@@ -4,6 +4,7 @@
 // dependencies
 const http = require('http');
 const url = require("url");
+const {StringDecoder} = require("string_decoder");
 
 // app object - model scaffolding
 const app = {};
@@ -33,10 +34,21 @@ app.handleReqRes = (req, res) => {
     const queryStringObject = parsedUrl.query;
     const headersObject = req.headers;
 
-    console.log(headersObject);
+    const decoder = new StringDecoder('utf-8');
+    let realData = '';
 
-    // handle response
-    res.end("hello munim");
+    req.on('data', (buffer) => {
+        realData += decoder.write(buffer);
+    });
+
+    req.on('end', () => {
+        realData += decoder.end();
+        console.log(realData);
+        // handle response
+        res.end("hello munim");
+    })
+
+
 };
 
 // start the server
