@@ -29,7 +29,7 @@ Users can create an account, authenticate securely, manage their monitoring link
 ## 🛠️ Built With
 
 - Node.js
-- JavaScript
+- TypeScript
 - RESTful API
 - Token-Based Authentication
 
