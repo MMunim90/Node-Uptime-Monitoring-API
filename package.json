@@ -1,18 +1,19 @@
 {
   "dependencies": {
+    "dotenv": "^18.0.10",
     "lodash": "^4.18.1",
     "tsx": "^4.23.15"
   },
   "name": "raw-node-project",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "server.ts",
   "devDependencies": {
     "@types/node": "^26.6.6",
     "typescript": "^7.0.2"
   },
   "scripts": {
-    "dev": "tsx watch ./src/index.ts",
+    "dev": "tsx watch ./src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

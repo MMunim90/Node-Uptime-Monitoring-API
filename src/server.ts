@@ -7,6 +7,7 @@
 // Dependencies
 import http from 'node:http';
 import { handleReqRes } from './helpers/handleReqRes';
+import config from './config';
 
 // App object - model scaffolding
 const app = {
@@ -22,7 +23,7 @@ const app = {
     createServer(): void {
         const server = http.createServer(this.handleReqRes);
 
-        server.listen(this.config.port, () => {
+        server.listen(config.port, () => {
             console.log(`Listening to port ${this.config.port}`);
         });
     }

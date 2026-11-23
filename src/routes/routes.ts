@@ -1,5 +1,5 @@
 // dependencies
-import sampleHandler from "./handlers/routeHandlers/sampleHandler"
+import sampleHandler from "../handlers/routeHandlers/sampleHandler"
 
 const routes = {
     sample: sampleHandler,

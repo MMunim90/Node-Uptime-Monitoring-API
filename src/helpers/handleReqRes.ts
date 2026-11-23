@@ -1,7 +1,7 @@
 import url from "node:url";
 import { StringDecoder } from "node:string_decoder";
 import type { Handler } from "../interface/handler";
-import routes from "../routes";
+import routes from "../routes/routes";
 import notFoundHandler from "../handlers/routeHandlers/notFoundHandler";
 
 // Module scaffolding
