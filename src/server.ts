@@ -11,10 +11,6 @@ import config from './config';
 
 // App object - model scaffolding
 const app = {
-    // Configuration
-    config: {
-        port: 3000
-    },
 
     // Handle request and response
     handleReqRes: handleReqRes,
@@ -24,7 +20,7 @@ const app = {
         const server = http.createServer(this.handleReqRes);
 
         server.listen(config.port, () => {
-            console.log(`Listening to port ${this.config.port}`);
+            console.log(`Listening to port ${config.port}`);
         });
     }
 };
